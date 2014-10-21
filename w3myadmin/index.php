@@ -13,6 +13,6 @@
 
 
 ?>
-
+<a href="showDb.php">Show Databases!</a>
 </body>
 </html>

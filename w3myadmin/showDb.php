@@ -14,7 +14,7 @@
       echo "<td>" . $i . "</td><td>" . $row['Database'] . "</td>";
       echo "<td><a href='showTables.php?db=$row[0]'>Show Tables</a></td>";
       ?>
-      <td><a href='dropDb.php?db=<?php echo $row[0]; ?>' onclick="return confirm('Do you really wants to Drop this Database?')">Drop Database</a></td>
+      <td><a href='controller/dropDb.php?db=<?php echo $row[0]; ?>' onclick="return confirm('Do you really wants to Drop this Database?')">Drop Database</a></td>
       <?php
       echo "</tr>";
     }
