@@ -2,6 +2,7 @@
 session_start();
 include("../conf/config.inc");
 ?>
+<!-Doctype -->
 <html>
   <head>
     <title>Registration Page</title>
@@ -10,7 +11,17 @@ include("../conf/config.inc");
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-9">
+          <?php
+            if( isset($_SESSION['ERR_MSG']) && is_array($_SESSION['ERR_MSG']) && count($_SESSION['ERR_MSG']) >0 ) {
+              echo '<div class="err">';
+              foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+                echo '<small>',$msg,'</small>';
+              }
+              echo '</div>';
+              unset($_SESSION['ERR_MSG']);
+            }
+          ?>
     <form class="form-horizontal" action="../controller/register.php" method="post">
 <fieldset>
 

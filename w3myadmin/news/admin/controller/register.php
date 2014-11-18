@@ -55,6 +55,8 @@ if(mysql_num_rows($checkuser)==1){
   if($errflag){
     $_SESSION['ERR_MSG']=$err;
     header("location: ../views/register.php");
+    session_write_close();
+    exit();
   }
 echo $errflag . "<br/>";
   foreach($err as $val){
