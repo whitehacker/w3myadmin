@@ -6,8 +6,8 @@
 <body>
 <?php
 DEFINE ('host','localhost');
-DEFINE ('user','root');
-DEFINE ('pass','root');
+DEFINE ('user','');
+DEFINE ('pass','');
 mysql_connect(host,user,pass);
 ini_set("display_errors",1);
 error_reporting(E_ALL ^ E_DEPRECATED);

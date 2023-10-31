@@ -1,6 +1,6 @@
 <?php
 DEFINE ('host','localhost');
-DEFINE ('user','root');
+DEFINE ('user','');
 DEFINE ('pass','');
 mysql_connect(host,user,pass);
 ini_set("display_errors",1);
